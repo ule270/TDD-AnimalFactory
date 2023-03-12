@@ -29,7 +29,7 @@ public abstract class Mammal implements Animal {
         this.name = name;
     }
 
-    public Date getBirthDate() {
+    public Integer getBirthDate() {
         return birthDate;
     }
 

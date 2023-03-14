@@ -17,8 +17,7 @@ public class CatTest {
     @Test
     public void setNameTest() {
 //        given
-        String name = "Kiki";
-        Cat cat = new Cat(name, new Date(), 2);
+        Cat cat = new Cat(null, new Date(), 2);
 
 //        when
         String expected = "Kitty";
@@ -35,8 +34,8 @@ public class CatTest {
     public void testSpeak() {
         //    given
         Cat cat = new Cat("Kiki", new Date(), 2);
-        String expected = "meow!";
         //        when
+        String expected = "meow!";
         String actual = cat.speak();
 //        then
         Assert.assertEquals(expected, actual);
@@ -65,7 +64,7 @@ public class CatTest {
     Cat cat = new Cat("Kiki", new Date(), 2);
     Integer expected = 1;
     Food food = new Food();
-    //        when
+//    when
         cat.eat(food);
     Integer actual = cat.getNumberOfMealsEaten();
 

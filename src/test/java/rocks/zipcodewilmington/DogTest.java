@@ -4,6 +4,7 @@ import com.google.inject.internal.Errors;
 import org.junit.Assert;
 import org.junit.Test;
 import rocks.zipcodewilmington.animals.Animal;
+import rocks.zipcodewilmington.animals.Cat;
 import rocks.zipcodewilmington.animals.Dog;
 import rocks.zipcodewilmington.animals.Mammal;
 
@@ -19,11 +20,10 @@ public class DogTest {
     @Test
     public void testNewDog() {
 //        given
+        Dog dog = new Dog(null, new Date(), 1);
         String name = "Oreo";
-        Dog dog = new Dog(name, new Date(), 1);
-
-//        when
         String expected = "Buddy";
+//        when
         dog.setName(expected);
         String actual = dog.getName();
 

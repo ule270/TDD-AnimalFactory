@@ -14,4 +14,3 @@ public class Dog extends Mammal {
         return "bark!";
     }
     }
-}

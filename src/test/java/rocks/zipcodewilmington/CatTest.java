@@ -13,9 +13,9 @@ import java.util.Date;
  * @author leon on 4/19/18.
  */
 public class CatTest {
-
+    // TODO - Create tests for `void setName(String name)`
     @Test
-    public void testNewCat() {
+    public void setNameTest() {
 //        given
         String name = "Kiki";
         Cat cat = new Cat(name, new Date(), 2);
@@ -27,18 +27,6 @@ public class CatTest {
 
 //        then
         Assert.assertEquals(expected, actual);
-    }
-    // TODO - Create tests for `void setName(String name)`
-    @Test
-    public void setName() {
-        //    given
-        Cat cat = new Cat("Kiki", new Date(), 2);
-        String givenName = "Kiki";
-        //        when
-        cat.setName(givenName);
-//        then
-        String catName = cat.getName();
-        Assert.assertEquals(catName, givenName);
     }
 
     // TODO - Create tests for `speak`

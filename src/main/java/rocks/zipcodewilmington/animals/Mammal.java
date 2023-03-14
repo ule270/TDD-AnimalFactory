@@ -47,7 +47,6 @@ public abstract class Mammal implements Animal {
     }
 
     @Override
-    public Integer getId() {
-        return id;
+    public Integer getId() {return id;
     }
 }

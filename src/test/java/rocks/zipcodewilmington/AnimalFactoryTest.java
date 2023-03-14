@@ -21,18 +21,10 @@ public class AnimalFactoryTest {
 //        Date birthDate = 7;
 ////        when
 //        Dog Dog = new Dog();
+//        Dog actualDog
 ////        then
-//        Assert.assertEquals(expected, actual);
+//        Assert.assertEquals(expectedDog, actualDog);
 //    }
-
-//        Integer expectedNumberOfDogs = 1;
-//        DogHouse.clear(());
-//
-//        Dog dog1 = new Dog (null, null, null);
-//        DogHouse.add(dog1);
-//        Integer actualNumberOfDogs = DogHouse.getNumberOfDogs();
-//
-//        Assert.assertEquals(expectedNumberOfDogs, actualNumberOfDogs);
 
     //TODO - Create Test for `Animal createCat(String name, Date birthDate)`
 //    @Test

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import rocks.zipcodewilmington.animals.Cat;
 import rocks.zipcodewilmington.animals.Dog;
+import rocks.zipcodewilmington.animals.animal_creation.AnimalFactory;
 
 import java.util.Date;
 
@@ -14,28 +15,35 @@ public class AnimalFactoryTest {
     int expected;
 
     //TODO - Create Test for `Animal createDog(String name, Date birthDate)`
-//    @Test
-//    public void createDog() {
-////       Given
-//        String expectedDog = "Milo";
-//        Date birthDate = 7;
-////        when
-//        Dog Dog = new Dog();
-//        Dog actualDog
-////        then
-//        Assert.assertEquals(expectedDog, actualDog);
-//    }
+    @Test
+    public void createDog() {
+//       Given
+        AnimalFactory animalFactory = new AnimalFactory();
+        Dog newDog = animalFactory.createDog("Miko", new Date(2023,3,14));
+        String expectedName = "Miko";
+        Date expectedDate = new Date(2023,3,14);
+//        when
+        String actualName = newDog.getName();
+        Date actualDate = newDog.getBirthDate();
+//        then
+        Assert.assertEquals(actualName,expectedName);
+        Assert.assertEquals(actualDate,expectedDate);
+    }
 
     //TODO - Create Test for `Animal createCat(String name, Date birthDate)`
-//    @Test
+    @Test
     public void createCat() {
 //       Given
-//        String expectedDog = "Kathy";
-//        Date birthDate = 9;
-////        when
-//        Cat cat = new cat();
-////        then
-//        Assert.assertEquals(expected, actual);
-//    }
+        AnimalFactory animalFactory = new AnimalFactory();
+        Cat newCat = animalFactory.createCat("Lulu", new Date(2023,3,15));
+        String expectedName = "Lulu";
+        Date expectedDate = new Date(2023,3,15);
+//        when
+        String actualName = newCat.getName();
+        Date actualDate = newCat.getBirthDate();
+//        then
+        Assert.assertEquals(actualName,expectedName);
+        Assert.assertEquals(actualDate,
+                expectedDate);
     }
 }
